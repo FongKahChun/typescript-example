@@ -18,6 +18,7 @@ function Home() {
   const handleClick = () => {
     alert('Button clicked');
   };
+  
 
   return (
     <><div>
