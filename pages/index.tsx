@@ -8,23 +8,23 @@ import { useState } from 'react';
 
 const inter = Inter({ subsets: ['latin'] })
 
-function Home() {
+let name:string
+
+const MyPage: React.FC = () => {
   const [value, setValue] = useState('');
 
-  const handleChange = (newValue: string) => {
+  const handleChange = (newValue: string) => {    
     setValue(newValue);
+    name=newValue
   };
 
   const handleClick = () => {
-    alert('Button clicked');
+    alert('Hi '+name+'!');
   };
-
 
   return (
     <><div>
-      <Textbox label="Enter name:" value={value} onChange={handleChange} />
-    </div>
-    <div>
+      <Textbox label="Enter your name:" value={value} onChange={handleChange} />
       <Button onClick={handleClick} text="Submit" />
     </div>
     <Head>
@@ -135,4 +135,4 @@ function Home() {
       </main></>
   );
 }
-export default Home;
+export default MyPage;
