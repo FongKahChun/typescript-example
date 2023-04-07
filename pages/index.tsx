@@ -76,10 +76,10 @@ const MyPage: React.FC = () => {
         <div className={styles.center}>
           <Image
             className={styles.logo}
-            src="/next.svg"
+            src="/1.png"
             alt="Next.js Logo"
-            width={180}
-            height={37}
+            width={300}
+            height={300}
             priority />
           <div className={styles.thirteen}>
             <Image
