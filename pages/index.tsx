@@ -66,8 +66,8 @@ const MyPage: React.FC = () => {
                 src="/1.png"
                 alt="Vercel Logo"
                 className={styles.vercelLogo}
-                width={100}
-                height={24}
+                width={200}
+                height={200}
                 priority />
             </a>
           </div>
