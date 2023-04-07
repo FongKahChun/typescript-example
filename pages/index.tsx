@@ -35,7 +35,7 @@ const MyPage: React.FC = () => {
 
       <Pinkbutton 
         border="none"
-        color="pink"
+        color="red"
         height = "200px"
         onClick={() => console.log("You clicked on the pink circle!")}
         radius = "50%"
