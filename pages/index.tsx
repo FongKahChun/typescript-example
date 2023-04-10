@@ -36,7 +36,7 @@ const MyPage: React.FC = () => {
 
       <div className='player-wrapper'>
       <video controls>
-        <source src="pages/kahpuipui.mp4" type="video/mp4" />
+        <source src="/pages/kahpuipui.mp4" type="video/mp4" />
       </video>
     </div>
 
