@@ -7,10 +7,7 @@ import Button from '../components/Button';
 import { useState } from 'react';
 
 import Pinkbutton from "../components/pinkbuttoncomponent";
-
-import videojs from 'video.js';
-import 'video.js/dist/video-js.css'; // Import the CSS file for Video.js
-
+import ReactPlayer from 'react-player';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,10 +15,6 @@ let name:string
 
 const MyPage: React.FC = () => {
   const [value, setValue] = useState('');
-  
-const player = videojs('my-video');
-player.src({ type: 'video/mp4', src: 'kahpuipui.mp4' });
-player.play();
 
   const handleChange = (newValue: string) => {    
     setValue(newValue);
@@ -41,11 +34,14 @@ player.play();
       
       <Button onClick={handleClick} text="Submit" />
 
-      <video id="my-video" className="video-js"></video>
-
-
-
-
+      <div className='player-wrapper'>
+      <ReactPlayer
+        src='pages\kahpuipui.mp4'
+        controls={true}
+        width='100%'
+        height='100%'
+      />
+    </div>
 
       <Pinkbutton 
         border="none"
