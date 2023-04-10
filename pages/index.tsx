@@ -21,7 +21,7 @@ const MyPage: React.FC = () => {
         <div className='player-wrapper'>
             <ReactPlayer
             className='react-player fixed-bottom'
-            url= 'videos/demo_video.MP4'
+            url= 'pages/kahpuipui.mp4'
             width='100%'
             height='100%'
             controls = {true}
