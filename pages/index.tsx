@@ -9,9 +9,6 @@ import { useState } from 'react';
 
 import Pinkbutton from "../components/pinkbuttoncomponent";
 
-import PlayerVi from '../components/viplayer';
-
-
 const inter = Inter({ subsets: ['latin'] })
 
 let name:string
