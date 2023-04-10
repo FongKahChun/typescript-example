@@ -8,12 +8,20 @@ import { useState } from 'react';
 
 import Pinkbutton from "../components/pinkbuttoncomponent";
 
+import videojs from 'video.js';
+import 'video.js/dist/video-js.css'; // Import the CSS file for Video.js
+
+
 const inter = Inter({ subsets: ['latin'] })
 
 let name:string
 
 const MyPage: React.FC = () => {
   const [value, setValue] = useState('');
+  
+const player = videojs('my-video');
+player.src({ type: 'video/mp4', src: 'kahpuipui.mp4' });
+player.play();
 
   const handleChange = (newValue: string) => {    
     setValue(newValue);
@@ -32,6 +40,12 @@ const MyPage: React.FC = () => {
       <Textbox label="事情:" value={value} onChange={handleChange} />
       
       <Button onClick={handleClick} text="Submit" />
+
+      <video id="my-video" className="video-js"></video>
+
+
+
+
 
       <Pinkbutton 
         border="none"
