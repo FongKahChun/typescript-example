@@ -14,8 +14,10 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "video.js": ["node_modules/video.js/dist/video.min.js"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx","src/**/*.ts","node_modules/video.js/dist/video.min.js"],
