@@ -7,6 +7,7 @@ import Button from '../components/Button';
 import { useState } from 'react';
 
 import Pinkbutton from "../components/pinkbuttoncomponent";
+import React, { Component } from 'react'
 import ReactPlayer from 'react-player';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -14,6 +15,23 @@ const inter = Inter({ subsets: ['latin'] })
 let name:string
 
 const MyPage: React.FC = () => {
+  class Video extends Component {
+    render () {
+        return (
+        <div className='player-wrapper'>
+            <ReactPlayer
+            className='react-player fixed-bottom'
+            url= 'videos/demo_video.MP4'
+            width='100%'
+            height='100%'
+            controls = {true}
+
+            />
+        </div>
+        )
+    }
+}
+
   const [value, setValue] = useState('');
 
   const handleChange = (newValue: string) => {    
