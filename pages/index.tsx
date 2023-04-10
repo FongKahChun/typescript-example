@@ -35,12 +35,9 @@ const MyPage: React.FC = () => {
       <Button onClick={handleClick} text="Submit" />
 
       <div className='player-wrapper'>
-      <ReactPlayer
-        src='pages\kahpuipui.mp4'
-        controls={true}
-        width='100%'
-        height='100%'
-      />
+      <video controls>
+        <source src="pages/kahpuipui.mp4" type="video/mp4" />
+      </video>
     </div>
 
       <Pinkbutton 
