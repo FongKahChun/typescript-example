@@ -6,8 +6,11 @@ import Textbox from '../components/Textbox';
 import Button from '../components/Button';
 import { useState } from 'react';
 
+
 import Pinkbutton from "../components/pinkbuttoncomponent";
-import ReactPlayer from 'react-player';
+
+import PlayerVi from '../components/viplayer';
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -36,9 +39,11 @@ const MyPage: React.FC = () => {
 
       <div className='player-wrapper'>
       <video controls>
-        <source src="./pages/kahpuipui.mp4" type="video/mp4" />
+        <source src="/kahpuipui.mp4" type="video/mp4" />
       </video>
+
     </div>
+    
 
       <Pinkbutton 
         border="none"
