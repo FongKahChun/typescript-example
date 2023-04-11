@@ -9,6 +9,10 @@ import { useState } from 'react';
 
 import Pinkbutton from "../components/pinkbuttoncomponent";
 
+
+import 'antd/dist/antd.css';
+import DatePicker from "../components/DatePicker";
+
 const inter = Inter({ subsets: ['latin'] })
 
 let name:string
@@ -34,12 +38,15 @@ const MyPage: React.FC = () => {
       
       <Button onClick={handleClick} text="Submit" />
 
+
       <div className='player-wrapper'>
       <video controls>
         <source src="/kahpuipui.mp4" type="video/mp4" />
       </video>
 
     </div>
+
+    <DatePicker/>
     
 
       <Pinkbutton 
